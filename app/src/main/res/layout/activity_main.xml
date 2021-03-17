@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="72dp"
+        android:text="Menu principal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="95dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Frais au forfait"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <Button
+        android:id="@+id/btnFHF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unclick"
+        android:text="Frais hors forfait"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/btnSYN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unclick"
+        android:text="Synthèse du mois"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id
+            ="@+id/btnENV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unclick"
+        android:text="Envoi des données vers"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <Button
+        android:id="@+id/btnPARAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unclick"
+        android:text="Paramètres"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="497dp" />
+
+</LinearLayout>
